@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Form Exercise</title>
+  </head>
+
+  <style>
+    table,
+    td,
+    tr {
+      border: solid 1px #000;
+    }
+  </style>
+
+  <body>
+    <form action="lab2_2login.html">
+      <h2>เข้าสู่ระบบ</h2>
+      <table>
+        <tr>
+          <td><label for="">Username :</label></td>
+          <td><input type="text" required /></td>
+          <br />
+        </tr>
+        <tr>
+          <td><label for="">Password :</label></td>
+          <td><input type="password" required /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="">กรุณาพิมพ์ตามตัวเลขที่ปรากฏ :</label><br />
+            <label for="">1559</label><br />
+            <input type="text" pattern="1559" /><br /><br />
+          </td>
+        </tr>
+      </table>
+      <button>
+        <img
+          src="https://i.ya-webdesign.com/images/log-png-images.png"
+          alt="login"
+          width="100"
+          height="100"
+        />
+      </button>
+    </form>
+  </body>
+</html>
