@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(255, 232, 232);
+  font-family: "Kanit";
+  font-size: 20px;
+  margin: 0px 10% 0%;
+}
+fieldset {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+legend {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 5px;
+}
+button {
+  transition-duration: 0.4s;
+  border: 3px solid #4caf50;
+  border-radius: 10px;
+  padding: 15px 32px;
+  font-family: "Kanit";
+  font-size: 15px;
+  margin: 2%;
+  background-color: white;
+}
+button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  border-radius: 5px;
+  border: 2px solid rgb(110, 110, 110);
+  background-color: rgb(241, 241, 241);
+  width: 98%;
+  height: 30px;
+}
+textarea {
+  border-radius: 5px;
+  border: 2px solid rgb(110, 110, 110);
+  background-color: rgb(241, 241, 241);
+  width: 98%;
+}

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <div><fieldset>
             <legend>ข้อมูลทั่วไป</legend>
             <label for="">ชื่อ-สกุล :</label><br>
-            <input type="text" name="name" placeholder="กรอกชื่อ-สกุล">*<br>
+            <input type="text" name="name" placeholder="กรอกชื่อ-สกุล(ภาษาไทย)" pattern="[ก-๙]{1,}\s{1,}[ก-๙]{1,}">*<br>
             <label for="">Email :</label><br>
             <input type="email" name="email">*<br>
             <label for="">โทรศัพท์ :</label><br>
@@ -56,12 +58,12 @@
             <input type="checkbox" id="ch3">
             <label for="ch3">ทะเล</label><br>
         </div></fieldset>
-        <label for="">ยอมรับเงื่อนไขและข้อตกลง</label>
+        <center><label for="">ยอมรับเงื่อนไขและข้อตกลง</label>
         <input type="radio" id="agree" name="chagree">
         <label for="agree">I agree</label>
         <input type="radio" id="disagree" name="chagree">
-        <label for="disagree">I disagree</label>
-        <button>จอง</button>
+        <label for="disagree">I disagree</label><br>
+        <button>จอง</button></center>
     </form>
 
 </body>
