@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var size = 14;
+        function decrease(){
+            size--;
+            document.getElementById('p1').style = `font-size: ${size}px`
+        }
+        function increase(){
+            size++;
+            document.getElementById('p1').style = `font-size: ${size}px`
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        <span onclick="decrease()">-</span> | <span onclick="increase()">+</span>
+    </h1>
+    <p id="p1">
+        If you're lieavin', will you take me with you? I'm tired of talkin' on my phone There is one thing I can never give you My heart will never be your home
+    </p>
+</body>
+</html>

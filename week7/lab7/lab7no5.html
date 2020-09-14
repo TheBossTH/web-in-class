@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      function addtable() {
+        let name = document.getElementById("name").value;
+        let address = document.getElementById("address").value;
+        let phone = document.getElementById("phone").value;
+        var table = document.getElementById("tableinfo");
+        var row = table.insertRow();
+        var td1 = row.insertCell(0);
+        var td2 = row.insertCell(1);
+        var td3 = row.insertCell(2);
+        td1.innerHTML = name;
+        td2.innerHTML = address;
+        td3.innerHTML = phone;
+      }
+    </script>
+  </head>
+  <body>
+    <label>ชื่อลูกค้า : </label><input type="text" id="name" /> <br />
+    <label>ที่อยู่ : </label><input type="text" id="address" /> <br />
+    <label>โทรศัพท์ : </label><input type="text" id="phone" /> <br />
+    <button onclick="addtable()">เพิ่ม</button> <br />
+
+    <table id="tableinfo">
+      <tr>
+        <td>ชื่อลูกค้า</td>
+        <td>ที่อยู่</td>
+        <td>โทรศัพท์</td>
+      </tr>
+    </table>
+  </body>
+</html>
