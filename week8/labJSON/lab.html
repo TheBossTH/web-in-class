@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>โรงพยาบาล</title>
+    <script>
+            async function getDataFromAPI(){
+                let response = await fetch('./priv_hos.json')
+                let rawData = await response.text()
+                let objectData = JSON.parse(rawData)
+                let result = document.getElementById('result')
+    
+                for (let i = 0;i<objectData.totalFeatures;i++){
+                    let content = 'ชื่อโรงพยาบาล : ' + objectData.features[i].properties.name + '</br>ที่อยู่ : '
+                    content += objectData.features[i].properties.address
+                    
+                    let li = document.createElement('li')
+                    li.innerHTML = content
+                    result.appendChild(li)
+                }
+            }
+            getDataFromAPI()
+        </script>
+</head>
+<body>
+    <h1 id="number">โรงพยาบาล</h1>
+    <ol id="result"></ol>
+</body>
+</html>
