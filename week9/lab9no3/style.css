@@ -1,0 +1,42 @@
+table {
+  border-collapse: collapse;
+}
+table,
+td,
+th {
+  border: 3px solid black;
+}
+th {
+  background-color: teal;
+  color: white;
+}
+body {
+  margin: 0;
+}
+#content {
+  padding: 1% 10% 2%;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: teal;
+  color: white;
+}
